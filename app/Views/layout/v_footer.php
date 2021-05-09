@@ -1,8 +1,7 @@
-       </div><!-- /.container-fluid -->
        </div>
-       <!-- /.content -->
        </div>
-       <!-- /.content-wrapper -->
+       </div>
+
 
        <!-- Main Footer -->
        <footer class="main-footer">
@@ -15,9 +14,6 @@
        </footer>
        </div>
        <!-- ./wrapper -->
-
-       <!-- REQUIRED SCRIPTS -->
-
 
        <!-- jQuery -->
        <script src="<?= base_url('template') ?>/plugins/jquery/jquery.min.js"></script>

@@ -3,7 +3,7 @@
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-info">
     <div class="container">
-      <a href="../../index3.html" class="navbar-brand">
+      <a href="<?= base_url() ?>" class="navbar-brand">
         <span class="brand-text font-weight-light"><b>Kawal Covid-19</b></span>
       </a>
 
