@@ -27,4 +27,21 @@ class Home extends BaseController
 		];
 		echo view('layout/v_wrapper', $data);
 	}
+
+	public function global()
+	{
+		$global = json_decode(file_get_contents('https://api.kawalcorona.com/'), true);
+		$positif = json_decode(file_get_contents('https://api.kawalcorona.com/positif'), true);
+		$sembuh = json_decode(file_get_contents('https://api.kawalcorona.com/sembuh'), true);
+		$meninggal = json_decode(file_get_contents('https://api.kawalcorona.com/meninggal'), true);
+		$data = [
+			'title' => 'Data Covid-19 Global',
+			'global' => $global,
+			'positif' => $positif,
+			'sembuh' => $sembuh,
+			'meninggal' => $meninggal,
+			'isi' => 'v_global',
+		];
+		echo view('layout/v_wrapper', $data);
+	}
 }

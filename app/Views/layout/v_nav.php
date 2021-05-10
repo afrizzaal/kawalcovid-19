@@ -8,10 +8,10 @@
        <a href="<?= base_url('home/covid19_nasional') ?>" class="nav-link">Sebaran Kasus Covid-19 Nasional</a>
      </li>
      <li class="nav-item">
-       <a href="#" class="nav-link">Global</a>
+       <a href="<?= base_url('home/global') ?>" class="nav-link">Global</a>
      </li>
      <li class="nav-item">
-       <a href="#" class="nav-link">Sebaran Kasus Covid-19 Global</a>
+       <a href="<?= base_url('home/covid19_global') ?>" class="nav-link">Sebaran Kasus Covid-19 Global</a>
      </li>
    </ul>
 

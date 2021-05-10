@@ -2,7 +2,7 @@
    <!-- small box -->
    <div class="small-box bg-warning">
      <div class="inner">
-       <h3><?= $nasional[0]['positif']; ?></h3>
+       <h3><?= $positif['value']; ?></h3>
 
        <p>Total Positif</p>
      </div>
@@ -17,7 +17,7 @@
    <!-- small box -->
    <div class="small-box bg-success">
      <div class="inner">
-       <h3><?= $nasional[0]['sembuh']; ?></h3>
+       <h3><?= $sembuh['value']; ?></h3>
 
        <p>Total Sembuh</p>
      </div>
@@ -32,7 +32,7 @@
    <!-- small box -->
    <div class="small-box bg-danger">
      <div class="inner">
-       <h3><?= $nasional[0]['meninggal']; ?></h3>
+       <h3><?= $meninggal['value']; ?></h3>
 
        <p>Total Meninggal</p>
      </div>
@@ -61,7 +61,7 @@
  <div class="col-lg-12">
    <div class="card card-info">
      <div class="card-header">
-       <h3 class="card-title">Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h3>
+       <h3 class="card-title">Data Kasus Coronavirus di Indonesia Berdasarkan Negara</h3>
      </div>
      <!-- /.card-header -->
      <div class="card-body">
@@ -77,13 +77,13 @@
          </thead>
          <tbody>
            <?php $no = 1;
-            foreach ($provinsi as $key => $value) { ?>
+            foreach ($global as $key => $value) { ?>
              <tr>
                <td class="text-center"><?= $no++; ?></td>
-               <td><?= $value['attributes']['Provinsi']; ?></td>
-               <td class="text-center"><span class="badge badge-warning"><?= number_format($value['attributes']['Kasus_Posi'], 0); ?></span></td>
-               <td class="text-center"><span class="badge badge-success"><?= number_format($value['attributes']['Kasus_Semb'], 0); ?></span></td>
-               <td class="text-center"><span class="badge badge-danger"><?= number_format($value['attributes']['Kasus_Meni'], 0); ?></span></td>
+               <td><?= $value['attributes']['Country_Region']; ?></td>
+               <td class="text-center"><span class="badge badge-warning"><?= number_format($value['attributes']['Confirmed'], 0); ?></span></td>
+               <td class="text-center"><span class="badge badge-success"><?= number_format($value['attributes']['Recovered'], 0); ?></span></td>
+               <td class="text-center"><span class="badge badge-danger"><?= number_format($value['attributes']['Deaths'], 0); ?></span></td>
              </tr>
            <?php } ?>
          </tbody>

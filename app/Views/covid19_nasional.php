@@ -12,9 +12,9 @@
 
     <?php foreach ($provinsi['features'] as $key => $value) { ?>
       L.marker([<?= $value['geometry']['y'] ?>, <?= $value['geometry']['x'] ?>]).addTo(mymap).bindPopup("Provinsi: <?= $value['attributes']['Provinsi'] ?><br>" +
-        "Positif :<?= $value['attributes']['Kasus_Posi'] ?><br>" +
-        "Sembuh : <?= $value['attributes']['Kasus_Semb'] ?><br>" +
-        "Meninggal: <?= $value['attributes']['Kasus_Meni'] ?>");
+        "Positif :<?= number_format($value['attributes']['Kasus_Posi'], 0) ?><br>" +
+        "Sembuh : <?= number_format($value['attributes']['Kasus_Semb'], 0) ?><br>" +
+        "Meninggal: <?= number_format($value['attributes']['Kasus_Meni'], 0) ?>");
     <?php } ?>
   </script>
 </div>
