@@ -4,15 +4,15 @@
      <li class="nav-item">
        <a href="<?= base_url() ?>" class="nav-link">Nasional</a>
      </li>
-     <!-- <li class="nav-item">
-       <a href="index3.html" class="nav-link">Pemetaan Nasional</a>
-     </li> -->
+     <li class="nav-item">
+       <a href="<?= base_url('home/covid19_nasional') ?>" class="nav-link">Sebaran Kasus Covid-19 Nasional</a>
+     </li>
      <li class="nav-item">
        <a href="#" class="nav-link">Global</a>
      </li>
-     <!-- <li class="nav-item">
-       <a href="#" class="nav-link">Pemetaan Global</a>
-     </li> -->
+     <li class="nav-item">
+       <a href="#" class="nav-link">Sebaran Kasus Covid-19 Global</a>
+     </li>
    </ul>
 
  </div>
