@@ -44,4 +44,15 @@ class Home extends BaseController
 		];
 		echo view('layout/v_wrapper', $data);
 	}
+
+	public function covid19_global()
+	{
+		$global = json_decode(file_get_contents('https://api.kawalcorona.com/'), true);
+		$data = [
+			'title' => 'Sebaran Kasus Covid-19 Global',
+			'global' => $global,
+			'isi' => 'covid19_global',
+		];
+		echo view('layout/v_wrapper', $data);
+	}
 }
